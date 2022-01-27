@@ -816,36 +816,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699213396}
   m_CullTransparentMesh: 1
---- !u!1 &718302824
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 718302825}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &718302825
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718302824}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 534.9226, y: 296.42053, z: -68.412544}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &769384034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,9 +1686,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Instructions:\n\nIn both games you will have a \"Studying\" options that
     you can accept. \n\nIf this option is selected, when you click on the button
-    to show the following number a sum or a substraction will appear and you have
-    to do it correctly to sum one to the score\nIf you doesn't select the \"Studying\"
-    option, you can see the following number of the Fibonacii serie just click on
+    to show the following number, a sum or a substraction appears and you have to
+    do it correctly to sum 1 to the Score.\nIf you doesn't select the \"Studying\"
+    option, you can see the following number of the Fibonacci serie just click on
     the button.\n\nIn the \"SUM\" option, the result of the sum is the following
     number of the serie. \nIn the \"SUBSTRACT option, the substraction have been
     done using two numbers already seen."
@@ -1730,8 +1700,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1950,8 +1920,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd750d6c879dc84ab0582796aaf3bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initPage: {fileID: 0}
-  instructionsPage: {fileID: 0}
+  initPage: {fileID: 2020787199}
+  instructionsPage: {fileID: 98034973}
 --- !u!4 &2050422037
 Transform:
   m_ObjectHideFlags: 0

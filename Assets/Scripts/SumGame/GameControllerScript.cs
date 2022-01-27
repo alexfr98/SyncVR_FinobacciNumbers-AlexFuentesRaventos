@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class GameControllerScript : MonoBehaviour
 {
@@ -58,7 +59,10 @@ public class GameControllerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("InitialPage");
+        }
     }
 
     private void ShowNumbers()
@@ -153,6 +157,8 @@ public class GameControllerScript : MonoBehaviour
             numbers = new List<long> { 0 };
             scoreText.gameObject.SetActive(true);
             correctChoice = true;
+            clickButton.enabled = true;
+
         }
         else
         {
@@ -161,6 +167,7 @@ public class GameControllerScript : MonoBehaviour
             dropdownMultipleChoice.gameObject.SetActive(false);
             scoreText.gameObject.SetActive(false);
             studyingModeActivated = false;
+            clickButton.enabled = true;
         }
         fibonacciNumbers.text = "If you want to know the Fibonacci numbers, CLICK ON THE BUTTON BELOW ";
     }
