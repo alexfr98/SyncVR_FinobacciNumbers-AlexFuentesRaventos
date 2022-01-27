@@ -124,8 +124,11 @@ public class GameControllerSubstract : MonoBehaviour
         dropdownMultipleChoice.gameObject.SetActive(true);
         dropdownMultipleChoice.options.Clear();
 
-        long firstRandomValue = numbers[numbers.Count - 1];
-        long secondRandomValue = numbers[UnityEngine.Random.Range(0, numbers.Count / 2)];
+        //Creating random index to select the first number of the substraction
+        int index = UnityEngine.Random.Range(0, numbers.Count - 1);
+        long firstRandomValue = numbers[index];
+        // the second value will be always smaller thn the first one
+        long secondRandomValue = numbers[UnityEngine.Random.Range(0, index)];
 
         string substraction = firstRandomValue.ToString() + " - " + secondRandomValue.ToString() + " =";
         //Creating three options. The first one is the good one, the second one is the good one + random numbre between 0 and 5, and the third one is the same but substracting
